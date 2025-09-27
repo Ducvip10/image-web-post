@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Login</title>
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <script src="./js/login.js" type="module"></script>
+    <script src="./js/logingoogle.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Image gallery</h1>
+        <nav><a href="mainpage.html">Home</a>
+
+            <a id="signupBtn" href="sigin.html">Sign Up</a>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="login-form" class="preview" action="" method="post">
+            <h2>Login / Sign Up</h2>
+            <input type="email" id="login-email" placeholder="Email" autocomplete="username" required>
+            <input type="password" id="login-pass" placeholder="Password" autocomplete="current-password" required>
+            <button id="login-but">Login</button>
+            <button id="LoginGoogleButton" type="button">
+      <i class="fab fa-google" id="loginGoogleButton"></i>Login with Google
+    </button>
+            <p class="message">Not registered? <a href="sigin.html">Create an account</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

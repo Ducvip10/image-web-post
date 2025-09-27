@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <title>Art PAge</title>
+</head>
+<body>
+    <header>
+        <h1>Image gallery</h1>
+        <nav>
+            <a id="loginBtn" href="login.html">Login</a>
+            <a id="signupBtn" href="sigin.html">Sign Up</a>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Photo Details</h2>
+        <div id="the_art" class="the-art">
+            <!-- Art details will be displayed here -->
+        </div>
+        <div id="the_art_name"></div>
+        <div id="the_uploader"></div>
+        <div id="description"></div>
+    </main>
+</body>
+<script type="module" src="./js/firebase_config.js"></script>
+<script type="module" src="./js/misc.js"></script>
+<script type="module" src="./js/admin.js"></script>
+<script type="module" src="./js/ArtPage.js"></script>
+</html>

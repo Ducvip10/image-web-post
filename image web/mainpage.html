@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ART gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mainpage.css">
+</head>
+
+<body>
+    <header>
+        <h1>Image gallery</h1>
+        <nav>
+            <a id="loginBtn" href="login.html">Login</a>
+            <a id="signupBtn" href="sigin.html">Sign Up</a>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="preview" class="preview">
+            <label for="file-input">Upload Image</label>
+            <img id="img-preview" src="./img.jpg" />
+            <input accept="image/*" type="file" id="file-input" required />
+            <label for="art-name">Photo Name</label><input type="text" id="art-name" placeholder="Enter art name" required />
+            <label for="art-description">Description</label><input type="text" id="art-description" placeholder="Enter art description" required />
+            <button type="submit" id="upload-button" class="contact-button">Tải lên</button></form>
+    </div>
+    <main>
+        <h2>Photo List</h2>
+        <div id="Art-list" class="Art-list">
+            <!-- image upload -->
+        </div>
+    </main>
+</body>
+
+<script type="module" src="./js/stufflog.js"></script>
+<script type="module" src="./js/uploadNpreview.js"></script>
+<script type="module" src="./js/admin.js"></script>
+<script type="module" src="./js/show.js"></script>
+<script type="module" src="./js/misc.js"></script>
+
+
+</html>

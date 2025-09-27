@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Sign In</title>
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Image gallery</h1>
+        <nav><a href="mainpage.html">Home</a>
+            <a id="loginBtn" href="login.html">Login</a>
+
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="signin-form" class="preview">
+            <h2>Sign In</h2>
+            <input type="email" id="signin-email" placeholder="Email" autocomplete="username" required>
+            <input type="password" id="signin-pass" placeholder="Password" autocomplete="current-password" required>
+            <input type="password" id="confir-pass" placeholder="Confirm Password" autocomplete="new-password" required>
+            <button id="signin-but">SignIn</button>
+            <p class="message">Already registered? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+    <script src="./js/signin.js" type="module"></script>
+</body>
+
+</html>
